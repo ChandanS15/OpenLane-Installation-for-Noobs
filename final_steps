@@ -1,0 +1,39 @@
+
+#-------------------------------------------------------Final Steps to run tools with installed pdks--------------------------------------------------------
+# Organising xschem directory
+
+cd ~/.xschem
+mkdir xschem_library && cd $_
+cp -a ~/OpenPDK/open_pdks/sources/xschem_sky130 \
+~/.xschem/xschem_library
+
+vim ~/.xschem/xschem_library/xschem_sky130/xschemrc
+
+#The last 7 lines of your xschemrc should look like this:
+
+## (spice patched) skywater-pdk install
+set SKYWATER_MODELS ~/OpenPDK/skywater-pdk/libraries/sky130_fd_pr_ngspice/latest/models
+set SKYWATER_STDCELLS ~/OpenPDK/skywater-pdk/libraries/sky130_fd_sc_hd/latest/cells
+
+## opencircuitdesign pdks install
+#set SKYWATER_MODELS ~/pdks/sky130A/libs.tech/ngspice
+#set SKYWATER_STDCELLS ~/pdks/sky130A/libs.ref/sky130_fd_sc_hd/spice
+
+#Install the sky130_fd_pr patch:
+
+cd ~/OpenPDK/skywater-pdk/libraries
+cp -a sky130_fd_pr sky130_fd_pr_ngspice
+cd sky130_fd_pr_ngspice/latest
+patch -p2 < ~/.xschem/xschem_library/xschem_sky130/sky130_fd_pr.patch
+
+#Configure spice in the xschem environment:
+
+vim ~/.xschem/simulations/.spiceinit
+
+#The file should look like this:
+
+set ngbehavior=hs
+
+gedit ~/.bashrc
+export PDK_ROOT="/pdk/path/to/sky130"    -- add this to the .bashrc file (for example, my PDK_ROOT = "~/OpenLane/pdks/open_pdks/sky130")
+source ~/.bashrc
