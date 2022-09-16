@@ -24,6 +24,7 @@ As I was once a noob who wanted to understand Linux and work on OpenSource tools
 4. Kunal Ghosh            - Director and co-founder of VLSI System Design (VSD) Corp. Pvt. Ltd. 
                             (https://www.udemy.com/course/vsd-a-complete-guide-to-install-openlane-and-sky130nm-pdk/)
 5. From official websites - CMAKE, Gaw, Ngspice (Links to the website are given below at the installation of the respective file)
+6. PraveenRajAyappan      -https://github.com/PraveenRajAyyappan/Opensouce_Digital_and_Analog_Setup
 
 
 Sorry if I have used your content and haven't specified your name above, please give me a pull request!
