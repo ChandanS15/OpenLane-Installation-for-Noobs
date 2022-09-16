@@ -6,11 +6,15 @@ I have also tried to add comments near every command so that you can understand 
 You just have to change the permission of the above files so that they can run as executable in your linux command.
 This conversion can be done using the command
 
-ls # notice the colour of the file dependencies.sh before executing the next command
+1. ls # notice the colour of the file dependencies.sh before executing the next command
 
-chmod 777 dependencies.sh
+2. chmod 777 dependencies.sh
 
-ls # notice the colour of the file dependencies.sh after executing the next command
+3. ls # notice the colour of the file dependencies.sh after executing the next command
+
+4. ./dependencies.sh #to start the execution of the shell script
+
+Follow the same instructions for all the scripts to install the particular tool.
 
 
 When you execute the above command you can verify that this file has its permission cha nged by executing ls command ahich shoes colour changed, which mena sour job is done succesfully.
