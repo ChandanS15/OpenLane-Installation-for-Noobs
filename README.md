@@ -30,6 +30,3 @@ As I was once a noob who wanted to understand Linux and work on OpenSource tools
 5. From official websites - CMAKE, Gaw, Ngspice (Links to the website are given below at the installation of the respective file)
 6. PraveenRajAyappan      -https://github.com/PraveenRajAyyappan/Opensouce_Digital_and_Analog_Setup
 
-
-Sorry if I have used your content and haven't specified your name above, please give me a pull request!
-Also, if something is not documented well or some of the following steps are not working let me know your advices through a pull request.
