@@ -1,6 +1,6 @@
 # OpenLane-Installation-for-Noobs
 
-As the name of the repository suggests, these instructions and files are for thsoe who has virtually zero experience with Linux based environment.
+As the name of the repository suggests, these instructions and files are for those who has virtually zero experience with Linux based environment.
 I have scripted all the commands to automate the installation of the OpenSource tools required to run RTL2GDS flow.
 I have also tried to add comments near every command so that you can understand a bit about the actions that is currently taking place.
 You just have to change the permission of the above files so that they can run as executable in your linux command.
